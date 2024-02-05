@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="" />
+    <title>Load Quality Enhancer 3000</title>
+    <meta name="description" content="The CHSP app is the go to resource for Wing A employees. Here you can review the DOK's, find union information, view the food truck schedule, see upcoming events and more!">
+    <meta property="og:image" content="images/1DAWingACHSPApp.png">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+
+<!------------------- THEMES ----------------------->
+    <link rel="stylesheet" href="themes/default-theme.css">
+    <script type="text/javascript">
+      const theme = document.querySelector('link[href="themes/default-theme.css"]');
+      const currentDate = new Date();
+      const month = currentDate.getMonth() + 1; // Add 1 beacause Javascript starts month index at 0.
+      const day = currentDate.getDate();
+      if (month == 1 && day <= 7) {
+        theme.setAttribute('href', 'themes/newyear-theme.css');
+      } else if (month == 2) {
+        if (day <= 15) {
+          theme.setAttribute('href', 'themes/valentines-theme.css');
+        } else if (day > 15 && day <= 20) {
+          theme.setAttribute('href', 'themes/pride/aro-theme.css');
+        }
+      } else if (month == 3) {
+        if (day >= 7 && day <= 18) {
+          theme.setAttribute('href', 'themes/st-patricks-theme.css');
+        } else if (day == 31) {
+          theme.setAttribute('href', 'themes/pride/trans-theme.css');
+        } else if (day >= 22) {
+          theme.setAttribute('href', 'themes/easter-theme.css'); // TODO
+        }
+      } else if (month == 4) {
+        if (day == 6) {
+          theme.setAttribute('href', 'themes/pride/asexual-theme.css');
+        } else if (day <= 25) {
+          theme.setAttribute('href', 'themes/easter-theme.css');
+        } else if (day == 26) {
+          theme.setAttribute('href', 'themes/pride/lesbian-theme.css');
+        }
+        
+      } else if (month == 5) {
+        if (day == 24) {
+          theme.setAttribute('href', 'themes/pride/pan-theme.css');
+        } else if (day >= 25 && day <= 31) {
+          theme.setAttribute('href', 'themes/memorial-theme.css');
+        }
+      } else if (month == 6) {
+        if (day == 1 || day == 15 || day == 30) {
+          theme.setAttribute('href', 'themes/pride/lgbtqia-theme.css');
+        } else if (day == 2 || day == 16) {
+          theme.setAttribute('href', 'themes/pride/lesbian-theme.css');
+        } else if (day == 3 || day == 17) {
+          theme.setAttribute('href', 'themes/pride/gay-theme.css');
+        } else if (day == 4 || day == 18) {
+          theme.setAttribute('href', 'themes/pride/bi-theme.css');
+        } else if (day == 5 || day == 19) {
+          theme.setAttribute('href', 'themes/pride/pan-theme.css');
+        } else if (day == 6 || day == 20 || day == 29) {
+          theme.setAttribute('href', 'themes/pride/trans-theme.css');
+        } else if (day == 7 || day == 21) {
+          theme.setAttribute('href', 'themes/pride/agender-theme.css');
+        } else if (day == 8 || day == 22) {
+          theme.setAttribute('href', 'themes/pride/genderfluid-theme.css');
+        } else if (day == 9 || day == 23) {
+          theme.setAttribute('href', 'themes/pride/nonbinary-theme.css');
+        } else if (day == 10 || day == 24) {
+          theme.setAttribute('href', 'themes/pride/pangender-theme.css');
+        } else if (day == 11 || day == 25) {
+          theme.setAttribute('href', 'themes/pride/queer-theme.css');
+        } else if (day == 12 || day == 26) {
+          theme.setAttribute('href', 'themes/pride/intersex-theme.css');
+        } else if (day == 13 || day == 27) {
+          theme.setAttribute('href', 'themes/pride/asexual-theme.css');
+        } else if (day == 14 || day == 28) {
+          theme.setAttribute('href', 'themes/pride/aroace-theme.css');
+        }
+      } else if (month == 6) {
+        if (day == 14) {
+          theme.setAttribute('href', 'themes/pride/nonbinary-theme.css');
+        }
+      } else if (month == 9) {
+        if (day == 23) {
+          theme.setAttribute('href', 'themes/pride/bi-theme.css');
+        }
+      } else if (month == 10 && day >= 19) {
+        theme.setAttribute('href', 'themes/halloween-theme.css');
+      } else if (month == 11) {
+        if (day == 1) {
+          theme.setAttribute('href', 'themes/halloween-theme.css');
+        } else if (day >= 13 && day < 19) {
+          theme.setAttribute('href', 'themes/pride/trans-theme.css');
+        } else if (day >= 19 && day <= 28) {
+          theme.setAttribute('href', 'themes/thanksgiving-theme.css');
+        }
+      } else if (month == 12) {
+        if (day == 8) {
+          theme.setAttribute('href', 'themes/pride/pan-theme.css');
+        } else if (day >= 6 && day <= 26) {
+          theme.setAttribute('href', 'themes/christmas-theme.css');
+        } else if (day >= 30) {
+          theme.setAttribute('href', 'themes/newyear-theme.css');
+        }
+      }
+    </script>
+<!----------------- END THEMES ------------------->
+
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body style="touch-action: pan-y;">
+  <script>
+    function detectIOS() {
+      var userAgent = navigator.userAgent;
+      var isIOS = /iPhone|iPad|iPod/.test(userAgent);
+      return isIOS;
+    }
+
+    function applyIOSStyles() {
+      if (detectIOS()) {
+        document.getElementById("ios-styles").innerHTML = ".nav \{padding-bottom: 20px\; height: 80px\; \}";
+      }
+    }
+
+    window.onload = applyIOSStyles;
+  </script>
+
+  <style id="ios-styles"></style> 
+    <div class="head-container">
+
+        <nav class="nav preventCopy">
+        <a href="https://wachsp.brandonladuke.net" onclick="buttonVibrate(1)" class="nav__link" id="nav__link__home">
+          <span class="material-symbols-outlined">CHSP</span>
+            <span class="nav__text">Home</span>
+          </a>
+          
+
+          
+        </nav>
+
+    
+
+    </div>
+    <div class="wrapper">
+<link rel="stylesheet" href="tetris/style.css">
+
+    <h1 class="section-title tetrisHeader preventCopy">Load Quality Enhancer 3000</h1>
+
+    <div class="tcontainer">
+    <div class="tgrid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+    </div>
+    <div>
+    <div class="mini-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <button id="start-button" class="btn"><span class="material-symbols-outlined">
+play_pause
+</span></button>
+<h3 id="scoreboard">Score: <span id="score">0</span></h3>
+</div>
+</div>
+<div id="controls">
+    <button id="mLeft"><span class="material-symbols-outlined">
+keyboard_arrow_left
+</span></button>
+    <button id="mDown"><span class="material-symbols-outlined">
+keyboard_arrow_down
+</span></button>
+    <button id="mRotate"><span class="material-symbols-outlined">
+rotate_right
+</span></button>
+    <button id="mRight"><span class="material-symbols-outlined">
+keyboard_arrow_right
+</span></button>
+</div>
+    <script src="app.js"></script>
+
+    </div>
+
+</body>
+</html>
