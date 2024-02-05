@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+:root {
+    --color-1: #FF76A4;
+    --color-2: #FFFFFF;
+    --color-3: #C011D7;
+    --color-4: #000000;
+    --color-5: #2F3CBE;
+
+    --color-10: #000000;
+    --color-11: #FFFFFF;
+    --pride-flag: linear-gradient(45deg, var(
+    --color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5), var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5), var(--color-1));
+    --pride-flag2: linear-gradient(-90deg, var(
+    --color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
+    --pride-flag3: linear-gradient(180deg, var(
+    --color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
+
+    /* Basic Colors */
+    --site-name-color: initial;
+    --site-background: #340d76;
+    --hr-color: var(--color-1);
+    --link-color: var(--color-1);
+    --text-color: var(--color-11);
+
+    --nav-bar-color: var(--color-3);
+    --nav-btn-color: #ffd5b8;
+    --nav-link-hover-color: var(--color-1);
+    --nav-link-active: var(--color-2);
+    
+    --table-bands: var(--color-5);
+    --table-bands-txt: var(--color-11);
+    
+    
+
+    /* Admin Buttons */
+    --button-confirm-bkg: #0afb60;
+    --button-confirm-txt: #000000;
+    --button-cancel-bkg: #fefefe;
+    --button-cancel-txt: #000000;
+    --danger-btn: #ff0000;
+    --upload-btn-bkg: var(--color-5);
+    --upload-btn-txt: var(--color-11);
+
+    /* User Facing Buttons */
+    --button-bkg-color: var(--color-5);
+    --button-txt-color: var(--color-2);
+    --button-convert-bkg: var(--color-3);
+    --button-convert-txt: var(--color-2);
+
+    /* cards */
+    --card-title-bkg: var(--pride-flag3);
+    --card-title-color: var(--color-2);
+    --card-bkg-color: var(--color-4);
+    --card-link-color: var(--color-3);
+    --card-text-color: var(--color-11);
+    --button-card-color: var(--color-5);
+    --button-card-txt-color: var(--color-2);
+
+    /* Event Alert */
+    --ea-border: var(--color-1);
+
+    /* FoodTrucks */
+    --chip-bkg: var(--color-3);
+    --chip-txt: var(--color-11);
+
+    --chip-border-hover: var(--color-1);
+    --ft-section-color: var(--color-3);
+    --ft-bkg: var(--pride-flag3);
+    --ft-txt: var(--color-11);
+
+    /* Team Page */
+    --team-card-bkg: var(--color-);
+    --team-card-txt: var(--color-11);
+
+    /* Admin Cards */
+    --admin-card-bkg: var(--color-4);
+    --admin-card-txt: var(--color-11);
+
+    /* Install Prompt Style */
+    --install-prompt-bkg: var(--color-3);
+    --install-prompt-txt: var(--color-11);
+
+    /* Sys Msg */
+    --sys-msg-bkg: var(--color-1);
+    --sys-msg-txt: var(--color-11);
+    --sys-msg-border: var(--color-11);
+    --sys-err-bkg: #ff4444;
+    --sys-err-txt: #000000;
+
+    --shortcuts-color: var(--color-2);
+}
+@keyframes flag {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 95% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+#logo {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+#logo a {
+    font-family: 'Titan One', sans-serif;
+    font-weight: 100;
+    font-size: clamp(48px, 1rem, 50px);
+    padding: 10px 5px 0 5px;
+    background: var(--pride-flag);
+    background-size: 500%;
+    background-position: 100% 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flag cubic-bezier(0.31, 0.06, 0.71, 0.95) infinite 15s;
+    overflow: hidden;
+}
+.section-title {
+    font-family: 'Titan One', sans-serif;
+    font-weight: 100;
+    color: initial;
+    margin-top: 0;
+    font-size: 2.5rem;
+    background: var(--pride-flag);
+    background-size: 500%;
+    background-position: 100% 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flag cubic-bezier(0.31, 0.06, 0.71, 0.95) infinite 15s;
+    overflow: hidden;
+}
+.teamHeader {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+.card h2,
+.ftMenu > h1 {
+    text-shadow: #000 2px 2px 3px, #000 -2px -2px 3px;
+    font-weight: 500 !important;
+}
+.tab {
+    font-weight: 700;
+}
+.btn {
+    font-weight: 700;
+}
+#shortcuts a {
+    font-weight: 700;
+}
+.grid-items span {
+    color: #fff;
+}
+#event-head {
+    margin: 0;
+    padding: 1rem;
+    background: var(--card-title-bkg);
+    color: var(--card-title-color);
+    flex: none;
+    text-shadow: #000 2px 2px 4px, #000 -2px -2px 4px;
+}

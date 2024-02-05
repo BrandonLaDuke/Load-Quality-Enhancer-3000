@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Bigbutter";
+    src: url('../../fonts/Bigbutter-WyjyA.ttf') format('truetype');
+    font-display: swap;
+}
+
+:root {
+    --color-1: #cfef1b;
+    --color2: #6a994e;
+    --color3: #a7c957;
+    --color4: #ffffff;
+    --color5: #bc4749;
+
+    /* Basic Colors */
+    --site-name-color: #cfef1b;
+    --site-background: #000000;
+    --hr-color: #fddfb6;
+    --link-color: #fdd50c;
+    --text-color: #ffffff;
+    --nav-bar-color: #1c1c1c;
+    --nav-btn-color: #dcdcdc;
+    --nav-link-hover-color: #343434;
+    --nav-link-active: #fffb14;
+    --table-bands: #fff0af;
+    --table-bands-txt: #000000;
+    
+    
+    /* Admin Buttons */
+    --button-confirm-bkg: #0afb60;
+    --button-confirm-txt: #000000;
+    --button-cancel-bkg: #fefefe;
+    --button-cancel-txt: #000000;
+    --danger-btn: #ff0000;
+    --upload-btn-bkg: #fdd50c;
+    --upload-btn-txt: #ffffff;
+
+    /* User Facing Buttons */
+    --button-bkg-color: #ffae17;
+    --button-txt-color: #000000;
+    --button-convert-bkg: #ffae17;
+    --button-convert-txt: #000000;
+
+    /* cards */
+    --card-title-bkg: url(
+    '../images/fireworks.png');
+    --card-title-color: #ffffff;
+    --card-bkg-color: #0d0d0d;
+    --button-card-color: #ffae17;
+    --button-card-txt-color: #000000;
+    --card-link-color: var(
+    --link-color);
+    --card-text-color: #ffffff;
+
+    /* Event Alert */
+    --shim: #392238bb;
+    --ea-bkg: #000000;
+    --ea-border: var(
+    --button-txt-color);
+
+    /* FoodTrucks */
+    --chip-bkg: #f8be11;
+    --chip-txt: #000000;
+    --chip-border: #00000000;
+    --chip-border-hover: var(
+    --site-name-color);
+    --ft-section-color: #fdd50c;
+    --ft-bkg: #fdd50c;
+    --ft-txt: #000000;
+
+    /* Team Page */
+    --team-card-bkg: #ffc61c;
+    --team-card-txt: #000000;
+
+    /* Admin Cards */
+    --admin-card-bkg: #282828;
+    --admin-card-txt: #ffffff;
+
+    /* Install Prompt Style */
+    --install-prompt-bkg: #1a1a1a;
+    --install-prompt-txt: #ffffff;
+    --install-prompt-shadow: #d9df20;
+
+    /* Sys Msg */
+    --sys-msg-bkg: #000000;
+    --sys-msg-txt: #faf726;
+    --sys-msg-border: rgb(240, 208, 46);
+    --sys-err-bkg: #ff4444;
+    --sys-err-txt: #000000;
+
+    --shortcuts-color: #f8be11;
+}
+#logo {
+    padding-top: 15px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+#logo a {
+    font-family:  'Bigbutter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: clamp(40px, 1rem, 50px);
+    padding: 10px 5px 0 5px;
+    text-shadow: 1px 1px 7px orange;
+}
+.section-title {
+    font-family: 'bigbutter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    color: var(--site-name-color);
+    font-size: 35px;
+}
+#nativeInstallPrompt p,
+#iOSInstallPrompt p {
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+.tab {
+    font-weight: 700;
+}
+.btn {
+    font-weight: 700;
+}
+#shortcuts a {
+    font-weight: 700;
+}
+.grid-items span {
+    color: #fff;
+}
+.post-head {
+    background-position: left top !important;
+    background-size: cover !important;
+}
+#event-head {
+    margin: 0;
+    padding: 1rem;
+    background: var(--card-title-bkg);
+    background-position: left top !important;
+    background-size: cover !important;
+    color: var(--card-title-color);
+    flex: none;
+}
+#information .card h2 {
+    background-position: left top !important;
+    background-size: cover !important;
+}
+body {
+    
+}

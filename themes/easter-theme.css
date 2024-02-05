@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Eggs";
+    src: url('../../fonts/teloraster/Teloraster.otf') format('opentype');
+    font-display: swap;
+}
+
+:root {
+    --color-1: #69ffb9;
+    --color2: #76ecfb;
+    --color3: #c1fda0;
+    --color4: #9386e6;
+    --color5: 	#f298f4;
+
+    /* Basic Colors */
+    --site-name-color: #00ef55;
+    --site-background: linear-gradient(45deg, #ff52ca, #44eeff);
+    --hr-color: #f8be11;
+    --link-color: #f8be11;
+    --text-color: #ffffff;
+    --nav-bar-color: #fda2ff;
+    --nav-btn-color: #000000;
+    --nav-link-hover-color: #ff52ca;
+    --nav-link-active: #ceff9c;
+    --table-bands: #e1ffe1;
+    --table-bands-txt: #000000;
+    
+    
+    /* Admin Buttons */
+    --button-confirm-bkg: #0afb60;
+    --button-confirm-txt: #000000;
+    --button-cancel-bkg: #fefefe;
+    --button-cancel-txt: #000000;
+    --danger-btn: #ff0000;
+    --upload-btn-bkg: #1aab54;
+    --upload-btn-txt: #ffffff;
+
+    /* User Facing Buttons */
+    --button-bkg-color: #bcffff;
+    --button-txt-color: #000000;
+    --button-convert-bkg: #f8be11;
+    --button-convert-txt: #000000;
+
+    /* cards */
+    --card-title-bkg: linear-gradient(to right, var(
+    --color1), var(--color3), var(--color2));
+    --card-title-color: #000000;
+    --card-bkg-color: #c1f8ff;
+    --button-card-color: #f8be11;
+    --button-card-txt-color: #000000;
+    --card-link-color: var(
+    --link-color);
+    --card-text-color: #000000;
+
+    /* Event Alert */
+    --shim: #392238bb;
+    --ea-bkg: #000000;
+    --ea-border: var(
+    --button-txt-color);
+
+    /* FoodTrucks */
+    --chip-bkg: #008800;
+    --chip-txt: #ffffff;
+    --chip-border: #00000000;
+    --chip-border-hover: var(
+    --site-name-color);
+    --ft-section-color: #f8be11;
+    --ft-bkg: #f8be11;
+    --ft-txt: #000000;
+
+    /* Team Page */
+    --team-card-bkg: #008800;
+    --team-card-txt: #ffffff;
+
+    /* Admin Cards */
+    --admin-card-bkg: #0f370f;
+    --admin-card-txt: #ffffff;
+
+    /* Install Prompt Style */
+    --install-prompt-bkg: #ffa1f4;
+    --install-prompt-txt: #ffffff;
+    /* --install-prompt-shadow: #ff006e; */
+
+    /* Sys Msg */
+    --sys-msg-bkg: #ff9d4d;
+    --sys-msg-txt: #000000;
+    --sys-msg-border: rgb(240, 208, 46);
+    --sys-err-bkg: #ff4444;
+    --sys-err-txt: #000000;
+
+    --shortcuts-color: #f8be11;
+}
+#logo {
+    padding-top: 15px;
+    margin: 0;
+    padding-bottom: 10px;
+    background: linear-gradient(to top, #1aab54, transparent);
+    margin-bottom: 1rem;
+}
+#logo a {
+    font-family: 'Eggs', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: clamp(31px, 1.5rem, 2rem);
+    padding: 10px 5px 0 5px;
+}
+.section-title {
+    font-family: 'Eggs', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    color: var(--site-name-color);
+    font-size: 2.5rem;
+}
+#nativeInstallPrompt p,
+#iOSInstallPrompt p {
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+.tab {
+    font-weight: 700;
+}
+.btn {
+    font-weight: 700;
+}
+#shortcuts a {
+    font-weight: 700;
+}
+.grid-items span {
+    color: #fff;
+}
+.post-head {
+    background-position: left top !important;
+    background-size: cover !important;
+}
+#event-head {
+    margin: 0;
+    padding: 1rem;
+    background: var(--card-title-bkg);
+    background-position: left top !important;
+    background-size: cover !important;
+    color: var(--card-title-color);
+    flex: none;
+}
+#information .card h2 {
+    background-position: left top !important;
+    background-size: cover !important;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff52ca, #44eeff);
+    opacity: 1;
+    z-index: -1;
+}
+.wrapper {
+    z-index: 1;
+}

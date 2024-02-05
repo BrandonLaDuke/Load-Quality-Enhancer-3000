@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Hole-Hearted";
+    src: url('../../fonts/roman-uncial-modern-font/Romanuncialmodern-jra0.ttf') format('truetype');
+    font-display: swap;
+}
+
+:root {
+    --color1: #386641;
+    --color2: #6a994e;
+    --color3: #a7c957;
+    --color4: #ffffff;
+    --color-1: #bc4749;
+
+    /* Basic Colors */
+    --site-name-color: rgb(255, 166, 0);
+    --site-background: #143c14;
+    --hr-color: #f8be11;
+    --link-color: #f8be11;
+    --text-color: #ffffff;
+    --nav-bar-color: #386641;
+    --nav-btn-color: #ffffffaa;
+    --nav-link-hover-color: #2e5536;
+    --nav-link-active: #f8be11;
+    --table-bands: #e1ffe1;
+    --table-bands-txt: #000000;
+    
+    
+    /* Admin Buttons */
+    --button-confirm-bkg: #0afb60;
+    --button-confirm-txt: #000000;
+    --button-cancel-bkg: #fefefe;
+    --button-cancel-txt: #000000;
+    --danger-btn: #ff0000;
+    --upload-btn-bkg: #1aab54;
+    --upload-btn-txt: #ffffff;
+
+    /* User Facing Buttons */
+    --button-bkg-color: #386641;
+    --button-txt-color: #ffffff;
+    --button-convert-bkg: #f8be11;
+    --button-convert-txt: #000000;
+
+    /* cards */
+    --card-title-bkg: #147414;
+    --card-title-color: #ffffff;
+    --card-bkg-color: #314835;
+    --button-card-color: #f8be11;
+    --button-card-txt-color: #000000;
+    --card-link-color: var(
+    --link-color);
+    --card-text-color: #ffffff;
+
+    /* Event Alert */
+    --shim: #392238bb;
+    --ea-bkg: #000000;
+    --ea-border: var(
+    --button-txt-color);
+
+    /* FoodTrucks */
+    --chip-bkg: #008800;
+    --chip-txt: #ffffff;
+    --chip-border: #00000000;
+    --chip-border-hover: var(
+    --site-name-color);
+    --ft-section-color: #f8be11;
+    --ft-bkg: #f8be11;
+    --ft-txt: #000000;
+
+    /* Team Page */
+    --team-card-bkg: #008800;
+    --team-card-txt: #ffffff;
+
+    /* Admin Cards */
+    --admin-card-bkg: #0f370f;
+    --admin-card-txt: #ffffff;
+
+    /* Install Prompt Style */
+    --install-prompt-bkg: #008800;
+    --install-prompt-txt: #ffffff;
+    --install-prompt-shadow: #ff006e;
+
+    /* Sys Msg */
+    --sys-msg-bkg: #ff9d4d;
+    --sys-msg-txt: #000000;
+    --sys-msg-border: rgb(240, 208, 46);
+    --sys-err-bkg: #ff4444;
+    --sys-err-txt: #000000;
+
+    --shortcuts-color: #f8be11;
+}
+#logo {
+    padding-top: 15px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+#logo a {
+    font-family: 'Hole-Hearted', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: clamp(36px, 1rem, 100%);
+    padding: 10px 5px 0 5px;
+    text-shadow: 1px 1px 5px #000000;
+}
+.section-title {
+    font-family: 'Hole-Hearted', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    color: var(--site-name-color);
+    font-size: 35px;
+}
+#nativeInstallPrompt p,
+#iOSInstallPrompt p {
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+.tab {
+    font-weight: 700;
+}
+.btn {
+    font-weight: 700;
+}
+#shortcuts a {
+    font-weight: 700;
+}
+.grid-items span {
+    color: #fff;
+}
+.post-head {
+    background-position: left top !important;
+    background-size: cover !important;
+}
+#event-head {
+    margin: 0;
+    padding: 1rem;
+    background: var(--card-title-bkg);
+    background-position: left top !important;
+    background-size: cover !important;
+    color: var(--card-title-color);
+    flex: none;
+}
+#information .card h2 {
+    background-position: left top !important;
+    background-size: cover !important;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../images/shamrocks.png');
+    opacity: 0.2;
+    z-index: -1;
+}
+.wrapper {
+    z-index: 1;
+}

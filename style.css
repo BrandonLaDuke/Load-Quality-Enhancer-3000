@@ -1,0 +1,75 @@
+.tetrisHeader {
+    padding: 3px;
+}
+.tcontainer {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+  }
+  
+  
+  .tgrid {
+    width: 208px;
+    height: 408px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px var(--color-1) solid;
+  }
+  
+  .tgrid div {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .tetromino {
+    background-color: blue;
+  }
+  #scoreboard {
+    text-align: center;
+  }
+  
+  
+  .mini-grid {
+    margin-left: 1rem;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px var(--color-1) solid;
+  }
+  
+  .mini-grid div {
+    height: 20px;
+    width: 20px;
+  }
+
+  #controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 20px;
+    position: fixed;
+    bottom: 110px;
+    margin: auto;
+  }
+  #controls button {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: var(--button-bkg-color);
+    color: var(--button-txt-color);
+  }
+  #controls button .material-symbols-outlined {
+    font-size: 2.5rem;
+  }
+  #start-button .material-symbols-outlined {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: -4px;
+  }
+  #start-button {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 1rem 0 auto 1.5rem;
+  }

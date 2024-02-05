@@ -1,0 +1,103 @@
+#logo {
+    margin: 2rem 0.1rem 0rem 0.1rem;
+    padding: 0;
+    padding-bottom: 15px;
+}
+#logo a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    padding: 0;
+}
+
+:root {
+    --color-1: #f8be11;
+    /* Basic Colors */
+    --site-name-color: #f8be11;
+    --site-background: #351c15;
+    --hr-color: #303136;
+    --link-color: #f8be11;
+    --text-color: #ffffff;
+    --nav-bar-color: #000000;
+    --nav-btn-color: #8e9297;
+    --nav-link-hover-bkg: #292b30;
+    --nav-link-active: #ffffff;
+    --table-bands: #566a6e;
+    --table-bands-txt: #ffffff;
+    
+    
+
+    /* Admin Buttons */
+    --button-confirm-bkg: #0afb60;
+    --button-confirm-txt: #000000;
+    --button-cancel-bkg: #fefefe;
+    --button-cancel-txt: #000000;
+    --danger-btn: #ff0000;
+    --upload-btn-bkg: #000000;
+    --upload-btn-txt: #f8be11;
+
+    /* User Facing Buttons */
+    --button-bkg-color: #351c15;
+    --button-txt-color: #f8be11;
+    --button-convert-bkg: #f8be11;
+    --button-convert-txt: #000000;
+
+    /* cards */
+    --card-title-bkg: #f8be11;
+    --card-title-color: #000000;
+    --card-bkg-color: #ffffff;
+    --button-card-color: #aa02ff;
+    --button-card-txt-color: #fff;
+    --card-link-color: purple;
+    --card-text-color: #000000;
+
+    /* Event Alert */
+    --shim: #000000bb;
+    --ea-bkg: #351c15;
+    --ea-border: var(
+    --button-txt-color);
+
+    /* FoodTrucks */
+    --chip-bkg: #000000;
+    --chip-txt: #ffffff;
+    --chip-border: #00000000;
+    --chip-border-hover: var(
+    --site-name-color);
+    --ft-section-color: var(
+    --site-name-color);
+    --ft-bkg: var(
+    --site-name-color);
+    --ft-txt: #000000;
+
+    /* Team Page */
+    --team-card-bkg: #ffffff;
+    --team-card-txt: #000000;
+
+    /* Admin Cards */
+    --admin-card-bkg: #000000;
+    --admin-card-txt: #ffffff;
+
+    /* Install Prompt Style */
+    --install-prompt-bkg: #121212ef;
+    --install-prompt-txt: #ffffff;
+    --install-prompt-shadow: #f8be11aa;
+
+    /* Sys Msg */
+    --sys-msg-bkg: #c4ffc8;
+    --sys-msg-txt: #000000;
+    --sys-msg-border: purple;
+    --sys-err-bkg: #ff8e8e;
+    --sys-err-txt: #000000;
+
+    --shortcuts-color: var(--card-title-bkg);
+}
+
+.btn {
+    font-weight: 700;
+}
+#event-head {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--card-title-bkg);
+    color: var(--card-title-color);
+    flex: none;
+}
