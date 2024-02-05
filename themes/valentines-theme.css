@@ -142,7 +142,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../images/hearts.png');
+    background-image: url('https://wachsp.brandonladuke.net/images/hearts.png');
     opacity: 0.1;
     z-index: -1;
 }
