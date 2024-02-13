@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mDown = document.getElementById("mDown")
     const mRotate = document.getElementById("mRotate")
     const mRight = document.getElementById("mRight")
+    const controlsArea = document.getElementById("controls")
   
     //The Tetrominoes
     const lTetromino = [
@@ -232,10 +233,13 @@ document.addEventListener('DOMContentLoaded', () => {
   
     //add functionality to the button
     startBtn.addEventListener('click', () => {
+      
       if (timerId) {
+        controlsArea.classList.add("hidden");
         clearInterval(timerId)
         timerId = null
       } else {
+        controlsArea.classList.remove("hidden");
         draw()
         timerId = setInterval(moveDown, 1000)
         nextRandom = Math.floor(Math.random()*theTetrominoes.length)
@@ -260,13 +264,60 @@ document.addEventListener('DOMContentLoaded', () => {
           squares = squaresRemoved.concat(squares)
           squares.forEach(cell => grid.appendChild(cell))
         }
+        if (score >= 10000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 700)
+        } else if (score >= 8000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 750)
+        } else if (score >= 7000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 760)
+        } else if (score >= 6000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 770)
+        } else if (score >= 5000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 780)
+        } else if (score >= 4000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 790)
+        } else if (score >= 3500) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 800)
+        } else if (score >= 3000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 825)
+        } else if (score >= 2500) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 850)
+        } else if (score >= 2000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 875)
+        } else if (score >= 1500) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 900)
+        } else if (score >= 1000) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 925)
+        } else if (score >= 700) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 935)
+        } else if (score >= 500) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 950)
+        } else if (score >= 200) {
+          clearInterval(timerId)
+          timerId = setInterval(moveDown, 975)
+        }
       }
     }
   
     //game over
     function gameOver() {
       if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
-        clearInterval(timerId)
+        clearInterval(timerId);
+        controlsArea.innerHTML = `<h3 style="text-align:center;">GAME OVER</h3>`;
       }
     }
   
